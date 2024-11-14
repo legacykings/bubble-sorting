@@ -1,0 +1,11 @@
+jame = [4,1,3,2]
+
+for j in range(len(jame)-1):
+    for i in range(len(jame)-1):
+        if jame[i] > jame[i+1]:
+            temp = jame[i+1]
+            jame[i+1] = jame[i]
+            jame[i] = temp
+    
+    
+print(jame)
